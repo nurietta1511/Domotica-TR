@@ -66,6 +66,41 @@ public class MainFragment extends Fragment implements MainContract.View {
                 put(CustomAdapter.DataAdapterValues.TEXT, "Lavabo planta principal");
                 put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
             }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Lavabo planta superior");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Dormitori secundari");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Menjador");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Cuina");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Rebost");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Jardi");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
+
+            add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
+                put(CustomAdapter.DataAdapterValues.TEXT, "Escala");
+                put(CustomAdapter.DataAdapterValues.IMAGE,R.mipmap.ic_launcher);
+            }});
         }};
 
         CustomAdapter customAdapter = new CustomAdapter(getActivity(), values);
