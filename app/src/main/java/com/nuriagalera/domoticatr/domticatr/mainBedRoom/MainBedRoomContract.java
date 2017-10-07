@@ -4,7 +4,8 @@ import com.nuriagalera.domoticatr.domticatr.BasePresenter;
 import com.nuriagalera.domoticatr.domticatr.BaseView;
 
 public interface MainBedRoomContract {
-    interface View extends BaseView<MainBedRoomContract.Presenter> {
+
+    interface View extends BaseView<Presenter> {
 
     }
 

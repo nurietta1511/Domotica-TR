@@ -13,11 +13,9 @@ public class MainBedRoomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainbedroom_act);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         MainBedRoomFragment mainBedRoomFragment = (MainBedRoomFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mainBedRoomContentFrame);
-
         if (mainBedRoomFragment == null) {
             mainBedRoomFragment = MainBedRoomFragment.newInstance();
 
