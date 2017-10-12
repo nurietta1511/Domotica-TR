@@ -20,6 +20,11 @@
             android:parentActivityName=".main.MainActivity"
             >
         </activity>
+
+        <activity android:name=".mainGarden.MainGardenActivity"
+            android:parentActivityName=".main.MainActivity"
+            >
+        </activity>
     </application>
 
 </manifest>

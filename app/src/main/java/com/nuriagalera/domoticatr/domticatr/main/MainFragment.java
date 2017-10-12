@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import com.nuriagalera.domoticatr.domticatr.R;
 import com.nuriagalera.domoticatr.domticatr.mainBedRoom.MainBedRoomActivity;
+import com.nuriagalera.domoticatr.domticatr.mainGarden.MainGardenActivity;
 import com.nuriagalera.domoticatr.domticatr.util.CustomAdapter;
 
 import java.util.ArrayList;
@@ -37,19 +38,6 @@ public class MainFragment extends Fragment implements MainContract.View {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.main_frag, container, false);
         ListView listView = (ListView) root.findViewById(R.id.mainListView);
-
-        // Defined Array values to show in ListView
-        /*String[] values = new String[]{"Dormitori principal",
-                "Dormitori secundari",
-                "Despatx",
-                "Lavabo planta principal",
-                "Lavabo planta superior",
-                "Menjador",
-                "Rebost",
-                "Cuina",
-                "Escala",
-                "Jardi"
-        };*/
 
         ArrayList<HashMap<CustomAdapter.DataAdapterValues, Object>> values = new ArrayList<HashMap<CustomAdapter.DataAdapterValues, Object>>(){{
             add(new HashMap<CustomAdapter.DataAdapterValues, Object>(){{
@@ -113,6 +101,11 @@ public class MainFragment extends Fragment implements MainContract.View {
                         Intent mainBedRoomIntent = new Intent(getContext(), MainBedRoomActivity.class);
                         startActivity(mainBedRoomIntent);
                         break;
+                    case 8:
+                        Intent mainGardenIntent = new Intent(getContext(), MainGardenActivity.class);
+                        startActivity(mainGardenIntent);
+                        break;
+
                     default:
                 }
 
