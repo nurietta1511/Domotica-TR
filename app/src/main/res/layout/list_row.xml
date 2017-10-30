@@ -21,6 +21,7 @@
             <ImageView
                 android:id="@+id/listRowImage"
                 android:layout_width="match_parent"
+                android:descendantFocusability="blocksDescendants"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"/>
 
@@ -32,8 +33,12 @@
                 android:textAlignment="center"
                 android:ems="10"
                 android:textSize="45px"
-                android:inputType="textPersonName"
+                android:descendantFocusability="blocksDescendants"
+                android:inputType=""
                 android:text="Name"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:focusable="false"
                 android:layout_weight="1"/>
 
 
