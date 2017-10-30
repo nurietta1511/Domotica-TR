@@ -112,6 +112,8 @@ public class MainFragment extends Fragment implements MainContract.View {
             }
         });
 
+        mPresenter.startBluethoothConnection();
+
        return root;
     }
 

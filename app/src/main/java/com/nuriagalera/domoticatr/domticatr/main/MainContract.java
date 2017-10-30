@@ -10,6 +10,6 @@ public interface MainContract {
     }
 
     interface Presenter extends BasePresenter {
-
+        void startBluethoothConnection();
     }
 }

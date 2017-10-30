@@ -10,6 +10,6 @@ public interface MainBedRoomContract {
     }
 
     interface Presenter extends BasePresenter {
-
+        void sendToBluethooth(int value);
     }
 }

@@ -2,6 +2,8 @@ package com.nuriagalera.domoticatr.domticatr.main;
 
 import android.support.annotation.NonNull;
 
+import com.nuriagalera.domoticatr.domticatr.util.Bluethooth;
+
 public class MainPresenter implements MainContract.Presenter {
 
     private final MainContract.View mMainView;
@@ -14,6 +16,10 @@ public class MainPresenter implements MainContract.Presenter {
 
     @Override
     public void start() {
+    }
 
+    @Override
+    public void startBluethoothConnection() {
+        Bluethooth.getInstance();
     }
 }
