@@ -8,7 +8,7 @@ public interface MainGardenContract {
 
     }
     interface Presenter extends BasePresenter {
-
+        void sendToBluethooth(int value);
     }
 
 }
